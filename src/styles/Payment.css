@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgba(254, 246, 236, 1);
+}
+
+.payment-page {
+  min-height: 100vh;
+  background: rgba(254, 246, 236, 1);
+}
+
+/* HEADER */
+
+.top-header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border: 1px solid rgba(185, 175, 175, 1);
+  background:
+    linear-gradient(0deg, rgba(255, 244, 230, 0.8), rgba(255, 244, 230, 0.8)),
+    linear-gradient(
+      90deg,
+      rgba(254, 142, 0, 0.18) 3.85%,
+      rgba(255, 244, 230, 0.2) 82.69%,
+      rgba(255, 244, 230, 0.2) 87.98%
+    );
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 238, 217, 1);
+}
+
+.logo-section h2 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.profile-setup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.profile-setup p {
+  font-size: 13px;
+  color: #6f6f6f;
+}
+
+.profile-setup .line {
+  width: 100px;
+  height: 2px;
+  background: #d6c9ba;
+}
+
+/* STEPS */
+
+/* OUTER WRAPPER */
+
+.steps {
+  height: 70px;
+  background: #f6e7d3;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 28px;
+  gap: 18px;
+}
+
+/* BACK ICON */
+
+.back-icon {
+  color: #6f6258;
+  flex-shrink: 0;
+}
+
+/* STEPPER */
+
+.steps-bar {
+  display: flex;
+  align-items: center;
+}
+
+/* STEP BOX */
+
+.step {
+  width: 300px;
+  height: 38px;
+
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+
+  flex-shrink: 0;
+}
+
+/* COLORS */
+
+.active {
+  background: #c493a4;
+}
+
+.current {
+  background: #ab5b84;
+}
+
+/* CONNECTOR LINE */
+
+.connector {
+  width: 50px;
+  height: 7px;
+  background: #c493a4;
+  margin: 0;
+}
+/* MAIN */
+
+/* MAIN WRAPPER */
+
+.main-wrapper {
+  padding: 30px 50px;
+  background: rgba(254, 246, 236, 1);
+  height: 100vh;
+  margin-bottom: 5%;
+}
+
+/* OUTER WHITE CARD */
+
+.membership-card {
+  position: relative;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 18px;
+  padding: 34px 26px 38px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* INNER PURPLE SECTION */
+
+.membership-card::after {
+  content: "";
+  position: absolute;
+  top: 34px;
+  left: 26px;
+  right: 26px;
+  bottom: 100px;
+  background: #8a1656;
+  z-index: 0;
+}
+
+.membership-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* SIDE PATTERN */
+
+.pattern {
+  position: absolute;
+  top: 34px;
+  bottom: 38px;
+  width: 14px;
+  z-index: 1;
+}
+
+.pattern.left {
+  left: 26px;
+}
+
+.pattern.right {
+  right: 26px;
+}
+
+.pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.08) 28%,
+    transparent 30%
+  );
+  background-size: 20px 30px;
+}
+
+/* TITLE */
+
+.membership-card h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(255, 204, 228, 1);
+}
+
+.subtitle {
+  text-align: center;
+  color: rgba(255, 203, 228, 1);
+  margin-top: 4px;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 126%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* DIVIDER */
+
+.divider {
+  width: 86px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.35);
+  margin: 14px auto 22px;
+}
+
+/* PRICE CARD */
+
+.price-card {
+  width: 92%;
+  margin: auto;
+  background: rgba(244, 238, 233, 1);
+  /* border: 10px solid red; */
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+/* TOP */
+
+.price-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+}
+
+/* ICON */
+
+.diamond-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff0e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ef8d2f;
+}
+
+/* TEXT */
+
+.price-info p {
+  color: rgba(17, 17, 17, 0.6);
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.price-row h2 {
+  color: rgba(17, 17, 17, 0.8);
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22.27px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.price-row span {
+  font-size: 11px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* COUPON */
+
+.coupon-row {
+  background: rgba(227, 218, 210, 1);
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coupon-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coupon-left p {
+  font-size: 12px;
+  color: #777;
+}
+
+.coupon-tag {
+  color: rgba(135, 71, 19, 1);
+  background: rgba(255, 178, 116, 0.6);
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+}
+
+.coupon-tag span {
+  font-size: 9px;
+  color: rgba(135, 71, 19, 1);
+}
+
+/* BUTTON */
+
+.coupon-row button {
+  border: none;
+  background: transparent;
+  color: rgba(221, 117, 31, 1);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* FEATURES */
+
+.features-grid {
+  width: 92%;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+/* FEATURE CARD */
+
+.feature-card {
+  background: rgba(100, 17, 57, 0.7);
+  border-radius: 4px;
+  padding: 16px 16px;
+  min-height: 220px;
+  color: white;
+}
+
+/* TITLE */
+
+.feature-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.feature-title h3 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/* LIST */
+
+.feature-card ul {
+  margin-top: 14px;
+
+  padding-left: 14px;
+}
+
+.feature-card li {
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.53);
+  margin-bottom: 2px;
+
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14.58px;
+  leading-trim: NONE;
+  line-height: 25px;
+  letter-spacing: 0%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-bar {
+    overflow-x: auto;
+  }
+
+  .step {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .membership-card h1 {
+    font-size: 28px;
+  }
+
+  .price-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .coupon-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
